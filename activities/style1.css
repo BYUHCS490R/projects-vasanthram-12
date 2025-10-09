@@ -1,0 +1,13 @@
+ul.list {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    list-style-image: url('Wonder.png');
+}
+main{
+    background-image: url(New7Wonders.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 200px;
+}
+
+
