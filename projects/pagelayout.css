@@ -8,6 +8,7 @@ header h1 {
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: #B85042 0px 9px 10px 5px;
+    text-shadow: #E7E8D1 3px 3px 0px;
 }
 body {
     background-color: #B85042;
@@ -45,7 +46,7 @@ figcaption {
     font-size: 15px;
 }
 #wrapper {
-    height: 725px;
+    height: 825px;
     width: 800px;
     margin: 100px auto;
     border: 2px solid black;
@@ -68,6 +69,9 @@ main {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     margin: 20px;
+    line-height: 1.6;
+    text-transform: none;
+    text-align: justify;
 }
 footer {
     text-align: left;
