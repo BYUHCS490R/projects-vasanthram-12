@@ -1,0 +1,31 @@
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    border: 4px dotted rgb(0, 0, 0);
+    margin: 30px;
+}
+nav {
+    text-align: center;
+    background-color: rgb(193, 150, 23);
+    
+}
+figure {
+    border: thin solid black;
+    width: 300px;
+}
+figure img {
+    width: 300px;
+    height: auto;
+}
+figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+    width: 800px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 1px;
+    background-color: rgb(16, 206, 206);
+}
