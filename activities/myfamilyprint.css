@@ -1,0 +1,79 @@
+header {
+    font-family: cursive;
+    background-color: #1995AD;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    display: flex;
+    font-family: cursive;
+    justify-content: space-evenly;
+    background-color: #F1F1F2;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    background-color: #c80d0d;
+}
+nav a:hover {
+    background-color: #2d0505;
+}
+.sidebar {
+    width: 30%;
+    font-family: cursive;
+    display: flex wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.sidebar img {
+    width: 100%;
+}
+.main-row {
+    display: flex;
+    font-family: cursive;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.card {
+    width: 200px;
+    height: auto;
+    box-shadow: 3px 3px 5px rgb(79, 78, 78);
+    margin: 10px;
+}
+.card img {
+    width: 100%;
+}
+footer {
+    font-family: cursive;
+}
+@media only screen and (max-width: 600px) {
+        .main-row {
+            flex-direction: column-reverse;
+            }
+
+        nav {
+            flex-direction: column;
+            }
+
+        .card {
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 100%;
+        }
+}
+@media print {
+        header, nav, footer .no-print {
+            display: none !important;
+        }
+}
