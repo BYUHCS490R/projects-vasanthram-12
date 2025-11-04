@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.schedule {
+    border-collapse: collapse;
+    border: thin solid rgb(0, 0, 0);
+    border-bottom: thin solid rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+}
+
+.schedule thead tr {
+    background-color: rgb(115, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+.schedule tbody tr {
+    border: thin solid rgb(0, 0, 0);
+
+}
+.schedule tbody tr:nth-child(even) {
+    background-color: rgb(220, 220, 220);
+}
+
+.schedule tfoot tr {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.num {
+    vertical-align: top;
+}

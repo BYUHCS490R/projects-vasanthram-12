@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header><h1>My Class schedule</h1></header>
+    <main>
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Nunber</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5">Computer Science</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>101</td>
+                    <td>9:00 AM - 10:30 AM</td>
+                    <td>Room 201</td>
+                    <td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Mathematics</th>
+                </tr>
+                <tr>
+                    <td>MATH</td>
+                    <td>201</td>
+                    <td>11:00 AM - 12:30 PM</td>
+                    <td>Room 105</td>
+                </tr>
+                <tr>
+                    <th colspan="5">English</th>
+                </tr>
+                <tr>
+                    <td>ENG</td>
+                    <td>150</td>
+                    <td>1:00 PM - 2:30 PM</td>
+                    <td>Room 303</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th colspan="5">History</th>
+                </tr>
+                <tr>
+                    <td>HIST</td>
+                    <td>210</td>
+                    <td>3:00 PM - 4:30 PM</td>
+                    <td>Room 404</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p><ul>
+            <li>We avoid using the border attribute as it is outdated and CSS allows for more styling control.
+            </li>
+            <li>To color alternate rows, you can use CSS such as tr:nth, child(even) and tr:nth, child(odd) for different colors.</li>
+        </ul></p>
+    </main>
+    <footer>&copy; 2025 Vasanth Ramachandiran</footer>
+    
+</body>
+</html>
