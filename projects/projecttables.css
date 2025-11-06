@@ -1,0 +1,80 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2F3C7E;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+nav {
+    background-color: #2F3C7E;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-family: cursive;
+}
+
+.main-row {
+    display: flex;
+    padding: 20px;
+    flex-direction: row-reverse;
+
+}
+
+.sidebar {
+    width: 20%;
+    display: flex wrap;
+    margin-left: 10px;
+    float: right;
+}
+
+.schedule {
+    width: 80%;
+    border: #2F3C7E;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedule th, .schedule td {
+    border: thin solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.schedule thead tr {
+    background-color: #B85042;
+    color: #E7E8D1;
+}
+
+.schedule tbody tr {
+    border: thin solid rgb(0, 0, 0);
+
+
+}
+.schedule tbody tr:nth-child(even) {
+    background-color: #66A5AD;
+}
+
+.schedule tbody tr:nth-child(odd) {
+    background-color: #C4DFE6;
+}
+
+footer {
+    background-color: #2F3C7E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
