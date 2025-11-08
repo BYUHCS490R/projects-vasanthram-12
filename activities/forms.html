@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Form Basics</h1></header>
+    <nav></nav>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <div>
+                <label for="full-name">Full Name</label>
+                <input type="email" id="full-name" name="fullname" placeholder="Enter your full name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" value="@example.com">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                    <option value="blank">---</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="checkbox" name="agree"> I agree the terms amd conditions</label>
+            </div>
+            <div>
+                Gender: 
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments">Type Something</textarea>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>
+            <ul>
+                <li>
+                    The action attribute in a form tag defines where the form data will go after a submission. It is essentially the browser command of which page or server is going to work with the user data.
+                </li>
+                <li>
+                    The method attribute is about the data transmission from the form. It typically chooses between GET and POST for server communication.
+                </li>
+                <li>
+                    Contrast POST with GET where the latter puts data in the URL, hence visible, and the former stores it in the request body, thus being a more secure way of handling sensitive data.
+                </li>
+            </ul>
+        </p>
+    </main>
+    <footer>&copy; 2025 Vasanth Ramachandiran</footer>
+    
+</body>
+</html>
