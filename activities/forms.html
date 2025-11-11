@@ -11,59 +11,66 @@
     <nav></nav>
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
-            <div>
-                <label for="full-name">Full Name</label>
-                <input type="email" id="full-name" name="fullname" placeholder="Enter your full name">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" value="@example.com">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select id="state" name="state">
-                    <option value="blank">---</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                </select>
-            </div>
-            <div>
-                <label><input type="checkbox" name="agree"> I agree the terms amd conditions</label>
-            </div>
-            <div>
-                Gender: 
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
-            </div>
-            <div>
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments">Type Something</textarea>
-            </div>
-            <input type="submit" value="Sign Up">
-        </form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <form action="formprocess.html" method="post">
+                <div class="form-row">
+                    <label for="full-name">Full Name:</label>
+                    <input type="email" id="full-name" name="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" value="@example.com">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                        <select id="state" name="state">
+                            <option value="blank">---</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                        </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">
+                        <label><input type="checkbox" name="subscribe" checked>Agree to the Terms and Conditions</label>
+                    </div>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender:
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments">Type Something</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </div>
+            </form>
+        </fieldset>
         <p>
             <ul>
                 <li>
-                    The action attribute in a form tag defines where the form data will go after a submission. It is essentially the browser command of which page or server is going to work with the user data.
+                    Forms are stylable via CSS through inline, internal, or external styles. Make use of properties such as margin, padding, border, radius, and box, shadow to not only beautify but also to better the layout of the page.
                 </li>
                 <li>
-                    The method attribute is about the data transmission from the form. It typically chooses between GET and POST for server communication.
-                </li>
-                <li>
-                    Contrast POST with GET where the latter puts data in the URL, hence visible, and the former stores it in the request body, thus being a more secure way of handling sensitive data.
+                    With the help of flexbox, forms become responsive to various display sizes. For instance, on a desktop, items may be arranged in rows whereas on a mobile device, you can organize them in columns thus making the content easier to read.
                 </li>
             </ul>
         </p>

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type="submit"]), .form-row select, .form-row textarea {
+    padding: 5px 10px;
+    background-color: #E7E8D1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.font-row input:not([type="submit"]):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: white;
+}
+
+.form-row input[type="submit"] {
+    padding: 10px;
+    background-color: #F98866;
+    color: white;
+} 
+.spacer {
+    margin-left: 160px;
+    display: flex;
+    gap: 10px;
+}
+.check-row {
+    margin: 15px 0;
+}
+
+legend {
+    background-color: #F98866;
+    padding: 20px;
+    color: white;
+}
+
+fieldset {
+    background-color: #A1BE95;
+    padding: 20px;
+}
+
+@media ONLY screen and (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+}
