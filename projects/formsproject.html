@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formsproject.css">
+    <title>Forms</title>
+</head>
+<body>
+    <header><h1>Job Application Form</h1></header>
+    <main>
+        <fieldset>
+            <legend>Application</legend>
+            <h2>Personal Information</h2>
+            <form action="Jobapplication.html" method="post">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="check-gender-row">
+                    Gender:
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-row">
+                    <label for="position">Position Applied For:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a Position</option>
+                        <option value="Library Assistant">Library Assistant</option>
+                        <option value="Circulation Assistant">Circulation Assistant</option>
+                        <option value="Technical Assistant">Technical Assistant</option>
+                        <option value="Archives Assistant">Archives Assistant</option>
+                        <option value="Student Intern">Student Intern</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="resume">Upload Resume:</label>
+                    <input type="submit" id="resume" name="resume" value="Upload Resume" required>
+                </div>
+                <div class="form-row">
+                    <label for="coverletter">Cover Letter:</label>
+                    <textarea id="coverletter" name="coverletter" placeholder="Write your cover letter here..." required></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer">
+                        <label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="spacer_submit">
+                        <input type="submit"></input>
+                    </div>
+                </div>
+            </fieldset>
+    </main>
+    <footer>&copy; 2025 Vasanth Ramachandiran</footer>
+    
+</body>
+</html>

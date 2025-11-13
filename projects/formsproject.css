@@ -1,0 +1,101 @@
+header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #31473A;
+    color: #EDF4F2;
+    text-align: center;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main h2 {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.form-row label {
+    width: 240px;
+    text-align: right;
+}
+
+.form-row input:not([type="submit"]), .form-row select, .form-row textarea {
+    padding: 5px 20px;
+    background-color: #D3C5E5;
+}
+
+.form-row input:not([type="submit"]):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: white;
+}
+
+.form-row input[type="submit"] {
+    padding: 10px;
+    background-color: #D3C5E5;
+}
+
+.check-gender-row {
+    display: flex;
+    margin-left: 188px;
+    gap: 10px;
+}
+
+.spacer {
+    margin-left: 200px;
+    gap: 10px;
+    display: flex;
+}
+
+.spacer_submit {
+    margin-left: 240px;
+    display: flex;
+}
+
+fieldset {
+    background-color: #735DA5;
+    padding: 30px;
+}
+
+legend {
+    background-color: #31473A;
+    padding: 20px;
+    color: white;
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #31473A;
+    color: #EDF4F2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media ONLY screen and (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+    .check-gender-row {
+        margin-left: 0;
+    }
+
+    .spacer {
+        margin-left: 0;
+    }
+}
