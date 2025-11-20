@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formprocess.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <header><h1>Form Processing</h1></header>
+        <div id="message"></div>
+        <form id="myForm">
+            First Name: <input type="text" id="firstName" name="first" placeholder="First Name"><br>
+            Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name"><br>
+            Password: <input type="password" name="pass" id="password"><br>
+            <input type="checkbox" name="remember" checked id="remember">
+            <label for="remember">Remember Me</label><br>
+            Age: <input type="number" name="age" id="age"><br>
+            Class:<br>
+            <input type="radio" name="class" value="freshman">Freshman<br>
+            <input type="radio" name="class" value="sophomore">Sophomore<br>
+            <input type="radio" name="class" value="junior">Junior<br>
+            <input type="radio" name="class" value="senior">Senior<br>
+            State:
+            <select name="state" id="state">
+                <option value="" disabled selected>Make Selection</option>
+                <option value="hi">Hawaii</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="ut">Utah</option>
+            </select><br>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 Vasanth Ramachandiran</p>
+    </footer>
+    <script src="formprocess.js"></script>
+</body>
+</html>

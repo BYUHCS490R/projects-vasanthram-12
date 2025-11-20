@@ -1,0 +1,29 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #000000;
+}
+
+main {
+    background: #b4aebd;
+    padding: 70px;
+    max-width: 300px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label, input, select {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 15px;
+}
