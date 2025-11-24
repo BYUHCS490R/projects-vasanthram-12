@@ -1,3 +1,32 @@
 body {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #C5001A;
+    background-color: #e8dfb8;
+}
+
+header {
+    background-color: #002C54;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.emphasis-text {
+    color: #cc00ff;
+}
+
+.de-emphasis-text {
+    font-style: italic;
+    color: #555555;
+}
+
+#special-box {
+    border: solid #000000;
+    background-color: #1bb016;
 }
