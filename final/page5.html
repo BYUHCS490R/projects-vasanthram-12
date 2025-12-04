@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finalproject.css" media="screen">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Android Preferences Form</h1></header>
+    <nav>
+        <a href="finalproject.html">Home</a>
+        <a href="page1.html">About the Game</a>
+        <a href="page2.html">Main Characters</a>
+        <a href="page3.html">Android Technology</a>
+        <a href="page4.html">Choices & Consequences</a>
+        <a href="page5.html">Create Your Android</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Design Your Own Future Android</h2>
+            <p>
+                Let's say it is 2038. What type of android might you come up with? Fill out this form to engineer your ideal helper or employee, and think about the moral problems brought up by the game.
+            </p>
+            <div id="message"></div>
+            <form id="myForm">
+                <fieldset>
+                    <legend>Your Android Design</legend>
+
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="userName" required minlength="2" placeholder="Enter your name"><br>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="userEmail" placeholder="example@email.com" required><br>
+
+                    <label for="model">Choose Android Model:</label>
+                    <select id="model" name="androidModel" required>
+                        <option value="">-- Select a Model --</option>
+                        <option value="rk900">Connor: RK900 (Advanced Investigator)</option>
+                        <option value="AX400">Kara: AX400 (Domestic Helper)</option>
+                        <option value="RK400">Markus: RK400 (Service/Labor)</option>
+                    </select>
+
+                    <p>Select Android Abilities:</p>
+                    <input type="checkbox" id="ability1" name="ability" value="language">
+                    <label for="ability1">Personal Assistant</label><br>
+
+                    <input type="checkbox" id="ability2" name="ability" value="strength">
+                    <label for="ability2">Super Power</label><br>
+
+                    <input type="checkbox" id="ability3" name="ability" value="creativity">
+                    <label for="ability3">Artistic/Creative Skills</label><br>
+
+                    <p>Do you think androids should have emotions?</p>
+                    <input type="radio" id="emotion_yes" name="emotions" value="yes" required>
+                    <label for="emotion_yes">Yes</label><br>
+
+                    <input type="radio" id="emotion_no" name="emotions" value="no">
+                    <label for="emotion_no">No</label><br>
+
+                    <label for="role_description">What role would your android serve in the future?</label>
+                    <textarea id="role_description" name="androidRole" rows="4" placeholder="Write a short paragraph..."></textarea><br>
+
+                    <input type="submit" id="button" value="Submit Design">
+                </fieldset>
+            </form>
+            
+            <p>
+                Want to learn more about AI and Robotics, read the article by Vincent C. Müller<a href="https://plato.stanford.edu/entries/ethics-ai/?utm_source=chatgpt.com" target="_blank"> Ethics of Artificial Intelligence and Robotics</a>.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Detroit Become Human Fan Site | Vasanth Ramachandiran</p>
+    </footer>
+    <script src="finalproject.js"></script>
+    
+</body>
+</html>
